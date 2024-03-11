@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <title>Greenery</title>
+</head>
+<body>
+
+ <!-- Navbar  -->
+ <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
+    <h1 class="text-2xl">Greenery</h1>
+
+    <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="w-6 h-6 md:hidden cursor-pointer">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </svg>
+
+    <ul class="gap-5 text-gray-600 hidden md:flex">
+        <li><a href="./index.html" class="hover:underline hover:text-black">Home</a></li>
+        <li><a href="./product.html" class="hover:underline hover:text-black">Products</a></li>
+        <li><a href="./contact.html" class="hover:underline hover:text-black">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Side Navbar  -->
+<section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000" style="width: 50%; height: 100vh; right: -50%;">
+    <div class="text-right p-5">
+        <p id="closenav" class="inline cursor-pointer">X</p>
+    </div>
+    <ul class="flex flex-col items-center gap-10 text-gray-600">
+        <li><a href="./index.html" class="hover:underline hover:text-black">Home</a></li>
+        <li><a href="./product.html" class="hover:underline hover:text-black">Products</a></li>
+        <li><a href="./contact.html" class="hover:underline hover:text-black">Contact</a></li>
+    </ul>
+</section>
+    
+<!-- Search -->
+<div class="text-center mt-10">
+    <h1 class="text-3xl font-bold mb-5">Our Products</h1>
+    <input id="search" type="text" placeholder="Search for a Product" class="w-10/12 border border-black h-12 p-2">
+</div>
+
+ <!-- Products  -->
+<div class="grid grid-cols-2 gap-7 md:gap-3 lg:gap-1 mt-10 md:grid-cols-4 p-14 text-center" id="product-container">
+    <!-- 1st row -->
+    <div>
+        <img src="./images/bestseller_1.png" class=" inline rounded hover:shadow-xl transform hover:-translate-y-2" alt="">
+        <h1>Rose Plant</h1>
+        <p>&#8377 200</p>
+    </div>
+
+    <div>
+        <img src="./images/bestseller_2.png" class=" inline rounded hover:shadow-xl transform hover:-translate-y-2" alt="">
+        <h1>Lilly Plant</h1>
+        <p>&#8377 299</p>
+    </div>
+
+    <div>
+        <img src="./images/bestseller_3.png" class=" inline rounded hover:shadow-xl transform hover:-translate-y-2" alt="">
+        <h1>Snake Plant</h1>
+        <p>&#8377 330</p>
+    </div>
+
+    <div>
+        <img src="./images/bestseller_4.png" class=" inline rounded hover:shadow-xl transform hover:-translate-y-2" alt="">
+        <h1>Lotus Plant</h1>
+        <p>&#8377 250</p>
+    </div>
+
+    <!-- 2nd row -->
+    <div>
+        <img src="./images/bestseller_1.png" class=" inline rounded hover:shadow-xl transform hover:-translate-y-2" alt="">
+        <h1>Rose Plant</h1>
+        <p>&#8377 200</p>
+    </div>
+
+    <div>
+        <img src="./images/bestseller_2.png" class=" inline rounded hover:shadow-xl transform hover:-translate-y-2" alt="">
+        <h1>Lilly Plant</h1>
+        <p>&#8377 299</p>
+    </div>
+
+    <div>
+        <img src="./images/bestseller_3.png" class=" inline rounded hover:shadow-xl transform hover:-translate-y-2" alt="">
+        <h1>Snake Plant</h1>
+        <p>&#8377 330</p>
+    </div>
+
+    <div>
+        <img src="./images/bestseller_4.png" class=" inline rounded hover:shadow-xl transform hover:-translate-y-2" alt="">
+        <h1>Lotus Plant</h1>
+        <p>&#8377 250</p>
+    </div>
+</div>
+
+     
+<!-- Footer  -->
+
+<section class="bg-green-100 p-10 flex flex-col gap-5">
+    <h1 class="font-bold text-4xl">Greenery</h1>
+    <p>The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+    <p>@ 2024 Greenery</p>
+</section>
+
+<script src="index.js"></script>
+<script src="product.js"></script>
+</body>
+</html>
